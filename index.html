@@ -8,77 +8,143 @@
     <title>Dashy 3</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"><!-- This defines that color of the nav bar and it makes it fixed which means that it will stay -->
-    <div class="container-fluid"> <!-- This is the container That holds the nav bar-->
-        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle na$">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a> <!--Shows the active Webpage of the webiste-->
-            </li>
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a> <!--Creates the Drop down memu for the accutal shop-->
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dogs</a></li>  <!-- Shops sub bars that will redirect the user to the spefifed web page-->
-                    <li><a class="dropdown-item" href="#">Cats</a></li>
-                    <li><a class="dropdown-item" href="#">Acessories</a></li>
-                </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Login</a> <!-- Login bar that will redirect the user to the spefifed web page-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Sign up</a><!-- Signup  bar that will redirect the user to the spefifed web page-->
-            </li>
-                
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button> <!-- This is the search bar that will be making it acisible for poeple to quilcky find what they want on the webiste.-->
-        </form>
-    </div>
-</nav>
+<!-- Latest compiled JavaScript of boot strap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/img/puppies.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:70%">
-      </div>
-      <div class="carousel-item">
-        <img src="/img/food.jpg" alt="Chicago" class="d-block" style="width:100%; height:55%">
-      </div>
-      <div class="carousel-item">
-        <img src="/img/traets.jpg" alt="New York" class="d-block" style="width:100%; height:70%">
-      </div>
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+    <table style="width:80%" align='center' >
+        <tr>
+            <th>
+            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/icon.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                          </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0)">Home</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Dogs</a></li>
+                              <li><a class="dropdown-item" href="#">Cats</a></li>
+                              <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Sgin up</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="text" placeholder="Search">
+                          <button class="btn btn-primary" type="button">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </th>
+        </tr>
+        <tr>
+          <th><div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/puppies.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:256px">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/food.jpg" alt="Chicago" class="d-block" style="width:100%;height:256px">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/traets.jpg" alt="New York" class="d-block" style="width:100%;height:256px">
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div></th>
+        </tr>
+        <tr>
+          <table style="width:80%" align='center' >
+              <tr>
+                  <th>
+                    <img src="/img/food2.png" alt="Dog Food" width="250px";height="250px" align="center">
+                    <div class="product meta">
+                        <div class="product title">
+                            Pecuro 10kg
+                        </div>
+                        <div class ="product price">
+                            <span class="money">
+                                £79.89
+                            </span>
+                        </div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="/img/pool.jpg" alt="Dog pool" width="250px";height="250px" align="center">
+                    <div class="product meta">
+                        <div class="product title">
+                            Dog pool
+                        </div>
+                        <div class ="product price">
+                            <span class="money">
+                                £15.99
+                            </span>
+                        </div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="/img/cats.jpg" alt="Dog pool" width="250px";height="250px" align="cente">
+                    <div class="product meta">
+                        <div class="product title">
+                            Cat pole
+                        </div>
+                        <div class ="product price">
+                            <span class="money">
+                                £30
+                            </span>
+                        </div>
+                    </div>
+                  </th>
+                </tr>
+          </table>
+        </tr>
+      </table>
+      
+    <!-- Carousel -->
+
 
 </body>  
 
 
 
 
-<!-- Latest compiled JavaScript of boot strap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
