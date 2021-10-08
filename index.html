@@ -21,20 +21,24 @@
             </th>
         </tr>
         <tr>
-            <th>
+            <th> <!-- the navigation bar strart-->
                 <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
                     <div class="container-fluid">
+                        <!-- An image in the left conor which is just a place holder until it i will find inspartion-->
                         <a class="navbar-brand" href="#">
                             <img src="/img/icon.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
                           </a>
+                          <!-- when the webiste resizes it will create a button that will contain all thhe nav buttons with in it-->
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="navbar-nav me-auto">
+                            <!-- that active nav item this is the on that inndicates where the user is on the webpage-->
                           <li class="nav-item">
                             <a class="nav-link active" href="javascript:void(0)">Home</a>
                           </li>
+                          <!-- This drop allows to added multiple item to an item in this case sub catergorys for the shop-->
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
                             <ul class="dropdown-menu">
@@ -50,6 +54,7 @@
                             <a class="nav-link disabled" href="#">Sgin up</a>
                           </li>
                         </ul>
+                        <!-- Serach bar wher in futer development will be used to quickly find what you are looking for and redirecting the user to the correct webpage-->
                         <form class="d-flex">
                           <input class="form-control me-2" type="text" placeholder="Search">
                           <button class="btn btn-primary" type="button">Search</button>
@@ -60,16 +65,18 @@
             </th>
         </tr>
         <tr>
-          <th><div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <th>
+              <br>
+              <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
+            <!-- Indicators for the casusel that shows on which image the user is on -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
               <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
               <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
             
-            <!-- The slideshow/carousel -->
+            <!-- The images used for the carousel with the spefifed wisth and hiegth -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="/img/puppies.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:256px">
@@ -82,7 +89,7 @@
               </div>
             </div>
             
-            <!-- Left and right controls/icons -->
+            <!-- Left and right controls/icons that are used for the movemnt of the carousel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
@@ -92,10 +99,13 @@
           </div></th>
         </tr>
         <tr>
+            <!-- Another table that allows me to create more defined space to the show items im planing to use-->
           <table style="width:80%" align='center' >
               <tr>
                   <th>
+                    <!-- images that are the most popular items on the store which have the names and prices -->
                     <img src="/img/food2.png" alt="Dog Food" width="250px";height="250px" align="center">
+                    <!--The product meta that later using css can be definded for all items within the webiste-->
                     <div class="product meta">
                         <div class="product title">
                             Pecuro 10kg
@@ -137,8 +147,6 @@
           </table>
         </tr>
       </table>
-      
-    <!-- Carousel -->
 
 
 </body>  
