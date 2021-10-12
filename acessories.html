@@ -11,6 +11,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Latest compiled JavaScript of boot strap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function validate(){
+        let x = document.forms["hello"]["fname"].value;
+        if (x == ""){
+            alert("The need to be a name");
+            return false;
+        }
+    }
+</script>
 </head>
 
 <body>
@@ -45,10 +54,10 @@
                             </ul>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Cart</a>
+                            <a class="nav-link disabled" href="javascript:void(0)">Cart</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Login</a>
+                            <a class="nav-link " href="./Contactus.html"></a>
                           </li>
                         </ul>
                         <!-- Serach bar wher in futer development will be used to quickly find what you are looking for and redirecting the user to the correct webpage-->
@@ -62,27 +71,6 @@
                    <br>
                    <br>
                   
-                <div class="container pl-10 ">
-                    <form>
-                        <div class="form">
-                            <tbody>
-                                <th width="10 ">
-                                    <div>First Name!</div>
-                                    <div><input class="first" width="10 " type="First Name " placeholder="First Name ">
-                                    </div>
-                                    <div>Last Name!</div>
-                                    <div><input class="last" type="Last Name " placeholder="Last Name "></div>
-                                    <div>Email!</div>
-                                    <input class="email" type="Email" width="10" placeholder="Email">
-                                    <div>Message!</div>
-                                    <div><textarea class="textarea"></textarea></div>
-                                    <div>
-                                        <input class="contactButton" type="Reset" name="Submit!" id="Submit! " value="Submit!" width="50" height="100">
-                                    </div>
-                            </tbody>
-                        </div>
-                    </form>
-                </div>
                   
             
     </body>
