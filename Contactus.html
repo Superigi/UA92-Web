@@ -36,7 +36,7 @@
                     <div class="container-fluid">
                         <!-- An image in the left conor which is just a place holder until it i will find inspartion-->
                         <a class="navbar-brand" href="#">
-                            <img src="/img/icon.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                            <img src="/img/icon.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> Dashy 3
                           </a>
                           <!-- when the webiste resizes it will create a button that will contain all thhe nav buttons with in it-->
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -78,27 +78,31 @@
                    <br>
                   
                   <!-- creating a singup part of the contact us page using the html form with the added validation.-->
-                <div class="container pt-4 pl-2 ">
-                    <form class= name name= "hello" onsubmit="return validate()">
-                        
-                        <tbody>
-                                <th width="10 ">
-                                    <div>First Name!</div>
-                                    <div><input name="fname" width="10 " type="text" placeholder="First Name ">
-                                    </div>
-                                    <div>Last Name!</div>
-                                    <div><input class="last" type="text " placeholder="Last Name "></div>
-                                    <div>Email!</div>
-                                    <input class="email" type="text" width="10" placeholder="Email">
-                                    <div>Message!</div>
-                                    <div><textarea class="textarea"></textarea></div>
-                                    <div>
-                                        <input class="submit" type="submit" name="Submit!" value="Submit!" width="50" height="100">
-                                    </div>
-                        </tbody>
-                    
-                    </form>
+              
                 </div>
+              <div class="form">              
+                <form name= "hello" onsubmit="return validate()">
+                  <div class="mb-3 mt-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control"  placeholder="Enter Name" name="fname">
+                  </div>
+                  <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  </div>
+                  <div class="form-check mb-3">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+
                   
             
     </body>
