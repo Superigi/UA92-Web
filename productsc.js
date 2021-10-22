@@ -1,3 +1,4 @@
+//the product with there names ids descrtiptions , images and prices of cats
 var products = {
     001: {
       name : "cat tree",
